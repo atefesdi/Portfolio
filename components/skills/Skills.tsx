@@ -8,14 +8,14 @@ type Props = {};
 function Skills({}: Props) {
   return (
     <div className="h-screen relative flex flex-col justify-center items-center ">
-      <h1 className=" absolute top-28 uppercase tracking-[20px] font-semibold text-3xl text-gray-500 ">
+      <h1 className="  absolute md:top-28 top-20 uppercase tracking-[10px] font-semibold text-xl md:text-3xl text-gray-500">
         skills
       </h1>
-      <h3 className=" absolute top-44 uppercase tracking-[7px] font-semibold text-sm text-gray-500 ">
+      <h3 className=" absolute md:top-44 top-28 uppercase tracking-[2px] md:font-semibold font-thin m-5 mb-8 md:text-lg text-center text-xs text-gray-500 ">
         Hover over skill for currency profienciency
       </h3>
 
-      <div className="grid grid-cols-4 gap-4 ">
+      <div className="grid md:grid-cols-4 grid-cols-3 gap-4 ">
       {skillArr.map((item , index)=> <Skill key={index} directionLeft={item.directionLeft} src={item.src} percentage={item.percentage} />)}
 
       </div>

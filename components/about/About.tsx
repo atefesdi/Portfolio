@@ -7,10 +7,10 @@ type Props = {};
 function About({}: Props) {
   return (
     <div className="h-screen relative flex flex-col  items-center justify-center">
-      <h1 className="absolute top-28 uppercase tracking-[20px] font-semibold text-3xl text-gray-500 ">
+      <h1 className="absolute md:top-28 top-20 uppercase tracking-[10px] font-semibold text-xl md:text-3xl text-gray-500 ">
         about
       </h1>
-      <div className="flex flex-col md:flex-row justify-center items-center  mt-24">
+      <div className="flex flex-col md:flex-row justify-start items-center  mt-24">
         <motion.div
           initial={{ opacity: 0, x: -200 }}
           whileInView={{
@@ -18,37 +18,35 @@ function About({}: Props) {
             x: 0,
           }}
           viewport={{
-            once:true
-         }}
+            once: true,
+          }}
           transition={{
             duration: 1,
           }}
-          
         >
-          <Image
+          <img
             src={"/about.jpg"}
-            width="400px"
-            height="400px"
-            className="w-52 h-52 object-cover flex-shrink-0 rounded-full md:rounded-lg "
+            className="md:w-[400px] md:h-[400px] h-[150px] w-[150px] object-cover flex-shrink-0 rounded-full md:rounded-lg "
           />
         </motion.div>
-        <motion.div className="w-[500px] md:w-[600px] pl-10"
-         initial={{ opacity: 0, x: 200 }}
-         whileInView={{
-           opacity: 1,
-           x: 0,
-         }}
-         viewport={{
-            once:true
-         }}
-         transition={{
-           duration: 1.2,
-         }}
+        <motion.div
+          className=" md:w-[600px] pl-10  w-[380px] flex flex-col justify-center items-start"
+          initial={{ opacity: 0, x: 200 }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+          }}
+          viewport={{
+            once: true,
+          }}
+          transition={{
+            duration: 1.2,
+          }}
         >
-          <h1 className="md:mb-10 my-5 text-4xl font-semibold">
+          <h1 className="md:mb-10 my-5 text-2xl md:text-4xl font-semibold">
             Here is a little background
           </h1>
-          <p className="md:text-xl text-md leading-2  md:leading-9">
+          <p className="md:text-xl md:text-md leading-2 text-sm pt-2 md:leading-9">
             Passionate junior front-end developer working with HTML, CSS,
             JavaScript, Reactjs, Redux, and Typescript aiming for personal and
             professional growth. Experienced in blending the art of design with
