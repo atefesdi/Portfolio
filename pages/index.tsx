@@ -8,15 +8,17 @@ import Hero from "../components/hero/Hero";
 import Skills from "../components/skills/Skills";
 
 const Home: NextPage = () => {
+  
   return (
-    <div className="h-screen overflow-x-hidden bg-[rgb(36,36,36)] text-white snap-y snap-mandatory 
-    z-0 overflow-scroll  ">
+    <div className="   h-screen overflow-x-hidden bg-[rgb(36,36,36)] text-white snap-y snap-mandatory 
+    z-0 overflow-scroll    ">
       <Head>
         <title>Ati's Portfolio</title>
       </Head>
 
       {/*Header */}
       <Header/>
+      <p className="bg-red-500 w-full">aksdkc</p>
 
       {/*Hero */}
       <section id="hero"  className=" snap-start ">
@@ -42,7 +44,7 @@ const Home: NextPage = () => {
 
       {/* Contact Me */}
       <section id="contact" className="snap-center" >
-      <Contact   />
+      {/* <Contact   /> */}
       </section>
       
 

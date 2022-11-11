@@ -6,7 +6,7 @@ type Props = {};
 
 function About({}: Props) {
   return (
-    <div className="h-screen relative flex flex-col  items-center justify-center">
+    <div className="h-screen  bg-[rgb(36,36,36)] relative flex flex-col  items-center justify-center">
       <h1 className="absolute md:top-28 top-20 uppercase tracking-[10px] font-semibold text-xl md:text-3xl text-gray-500 ">
         about
       </h1>

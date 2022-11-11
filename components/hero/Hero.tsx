@@ -18,7 +18,7 @@ export default function Hero({}: Props) {
   });
 
   return (
-    <div className="flex overflow-hidden flex-col space-y-8 h-screen justify-center items-center  ">
+    <div className="h-screen w-[100%] bg-[rgb(36,36,36)] flex overflow-hidden flex-col space-y-8 justify-center items-center  ">
       <BackgroundCircle />
 
       <Image

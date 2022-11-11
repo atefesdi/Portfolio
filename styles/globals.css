@@ -32,4 +32,10 @@
     color: rgb(214, 214, 214);
 
   }
+  .news-item {
+    border: 1px solid;
+    height: calc(100vh - 400px);
+    flex-shrink: 0;
+    margin: 100px 0;
+  }
 }
