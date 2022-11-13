@@ -91,7 +91,7 @@ function Experience({}: Props) {
         <div
           ref={ref}
           id="slider"
-          className="sticky flex flex-row top-40  h-screen  w-screen overflo  "
+          className="sticky flex flex-row top-40  h-screen  w-screen  "
           style={styletransform}
         >
           {project.map((item, index) => (
