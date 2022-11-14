@@ -17,7 +17,7 @@ function Experience({}: Props) {
 
   useEffect(() => {
     const element = document.getElementById("slider");
-    setItemsHeight(ref.current?.scrollWidth);
+    setItemsHeight(ref?.current.scrollWidth);
     setWindowHeight(window.innerHeight);
     setWindowWidth(window.innerWidth);
     console.log(element?.scrollWidth)
@@ -83,7 +83,7 @@ function Experience({}: Props) {
       style={stl}
       className=" h-screen  bg-[rgb(36,36,36)]  relative  max-w-full "
     >
-      <div className="sticky overflow-auto top-10 flex flex-col  w-screen items-center justify-center ">
+      <div className="sticky overflow-auto top-10 flex flex-col  w-full items-center justify-center ">
         <h1 className=" uppercase tracking-[10px]  font-semibold text-xl md:text-3xl text-gray-500">
           experience
         </h1>
@@ -91,7 +91,7 @@ function Experience({}: Props) {
         <div
           ref={ref}
           id="slider"
-          className="sticky flex flex-row top-40  h-screen  w-screen  "
+          className="sticky flex flex-row top-40  h-screen w-full  scrollbar-hide "
           style={styletransform}
         >
           {project.map((item, index) => (
